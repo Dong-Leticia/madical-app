@@ -26,10 +26,10 @@ function NavBar() {
     <div class="dropdown-content">
             <Link to="/about">Our Partners</Link>
             <Link to="/medicalteam">Our Medical Team</Link>
-            <Link to="/">Contact</Link>
+            <Link to="/contact">Contact</Link>
     </div>
   </div>   
-        <li><Link to="/">Health Packages</Link> </li>
+       
         <div class="dropdown">
     <button className="dropbtn">Online Services 
       <i class="fa fa-caret-down"></i>

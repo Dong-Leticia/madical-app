@@ -41,7 +41,7 @@ function DrugDelivery() {
           <img src={ema} alt="no" />
           <div className="textGroup">
             <h1>
-                excellent service{" "}
+                {" "}
             
             </h1>
             <a href="tel:045337373525">Contact: 0248381953</a>
@@ -56,7 +56,7 @@ function DrugDelivery() {
               
             </h4>
             <p>
-             we have dentist which you can easly talk to 
+             
               
             </p>
           </div>
@@ -68,7 +68,7 @@ function DrugDelivery() {
           <img src={fred} alt="no" />
           <div className="textGroup">
             <h1>
-             we are passionate abaut providing care to those in need  
+               
               {" "}
             </h1>
             <a href="tel:045337373525">Contact: 0551682482</a>
@@ -83,7 +83,7 @@ function DrugDelivery() {
               
             </h4>
             <p>
-              we are trustworthy
+              
               
             </p>
           </div>
@@ -95,7 +95,7 @@ function DrugDelivery() {
           <img src={saver} alt="no" />
           <div className="textGroup">
             <h1>
-              we are comfortable which close personal interaction
+              
               {" "}
             </h1>
             <a href="tel:045337373525">Contact: 0508223390</a>
@@ -111,7 +111,7 @@ function DrugDelivery() {
             </h4>
             <p>
               
-              we have a datail-oriented person
+              
             </p>
           </div>
         </div>
@@ -122,8 +122,8 @@ function DrugDelivery() {
           <img src={ulcer} alt="no" />
           <div className="textGroup">
             <h1>
-              Are you looking for the best a dentist? you are in the right
-              place{" "}
+              
+              {" "}
             </h1>
             <a href="tel:045337373525">Contact: 0240729999 </a>
             <h4>
@@ -137,7 +137,7 @@ function DrugDelivery() {
               
             </h4>
             <p>
-              we are artistic
+    
               
             </p>
           </div>

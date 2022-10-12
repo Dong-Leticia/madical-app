@@ -3,11 +3,12 @@ import sahada from '../nurses/sahada.jpg'
 import yaa from '../nurses/yaa.jpg'
 import ivy from '../nurses/ivy.jpg'
 import eva from '../nurses/eva.jpg'
+
 function bookNutritionist() {
 
   return (
     
-<>
+
 <div className="container">
         <div className="card">
           <p>Sahada</p>
@@ -22,21 +23,17 @@ function bookNutritionist() {
               {" "}
               <a href="mailto:donleticia868@gmail.com">
                 {" "}
-                Email:donleticia868@gmail.com
+                send mail
                  
               </a>
               <a href="Location:Danko"> Location: Danko</a>
               
             </h4>
-            <p>
-              
-              we have good speaking skills
-            </p>
+          
           </div>
         </div>
 
-    </div>
-<div className="container">
+
         <div className="card">
           <p>Sadika</p>
           <img src={yaa} alt="not found" />
@@ -50,21 +47,17 @@ function bookNutritionist() {
               {" "}
               <a href="mailto:donleticia868@gmail.com">
                 {" "}
-                Email:donleticia868@gmail.com
+                send mail
                  
               </a>
               <a href="Location:Danko"> Location: Danko</a>
               
             </h4>
-            <p>
-              
-              we have problm solving skills
-            </p>
+        
           </div>
         </div>
 
-    </div>
-<div className="container">
+
         <div className="card">
           <p>Adina</p>
           <img src={ivy} alt="not found" />
@@ -78,22 +71,17 @@ function bookNutritionist() {
               {" "}
               <a href="mailto:donleticia868@gmail.com">
                 {" "}
-                Email:donleticia868@gmail.com
+                send mail
                  
               </a>
               <a href="Location:Danko"> Location: Danko</a>
               
             </h4>
-            <p>
-              we have nutritionist who educate,advise and guide patients on nutrition plans that
-              help them maintain a healthy lifestyle.
-              
-            </p>
+          
           </div>
         </div>
 
-    </div>
-<div className="container">
+
         <div className="card">
           <p>Leticia</p>
           <img src={eva} alt="no" />
@@ -107,21 +95,18 @@ function bookNutritionist() {
               {" "}
               <a href="mailto:donleticia868@gmail.com">
                 {" "}
-                Email:donleticia868@gmail.com
+                 send mail
                  
               </a>
               <a href="Location:Danko"> Location: Danko</a>
               
             </h4>
-            <p>
-              we have good organizational skills.
-              
-            </p>
+           
           </div>
         </div>
 
         </div>
-    </>
+ 
   )
 }
 

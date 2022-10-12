@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-
+import lab from '../drugs/lab.webp'
 
 function LabServices() {
   return (
@@ -32,7 +32,7 @@ function LabServices() {
     </div>
         
                 <div className='lab-wrap'>        
-        <img src="pics/lab.webp" alt="images"/>
+      <img src={lab}alt="images"/>
   
           </div>
     </div> 

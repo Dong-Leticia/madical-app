@@ -23,7 +23,7 @@ import Book from './components/Book';
 function App() {
   return (
   <>
-    <bookDoctor/>
+ 
       <div className="app">
         
         <Routes>

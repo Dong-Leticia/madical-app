@@ -2,8 +2,10 @@
   margin: 0;
   padding: 0;
 }
+
+
 nav{
-  background-color: blue;
+  background-color: gray;
   color:white;
   display: flex;
   justify-content: space-between;
@@ -14,6 +16,7 @@ nav{
 }
 .nav-11{
   text-align: center;
+  color: #fff;
 }
 ul{
   display: flex;
@@ -25,14 +28,16 @@ li{
   margin: 25px;
   text-decoration: none;
   margin-top: 70px;
+  color: #fff;
 }
 section{
   height: 125vh;
-  background-color: white;
+  background-color: rgba(0, 255, 64, 0.329);
 }
 h1{
   text-align: center;
-  color: rgb(219, 27, 123);
+  color:#000;
+  font-weight: lighter;
 }
 footer{
   height: 20vh;
@@ -89,26 +94,24 @@ img{
   margin: 5px;
 }
 .container{
-  border: 2px solid gray;
-  display: flex;
-  flex-direction: column;
-  background-color: bisque;
-  width: 500px;
-  text-align: center;
-  align-content: center;
+display:flex;
+
+  
+ 
+ 
 
 }
 .card{
   margin: 20px auto;
   max-width: 300px;
-  display: flex;
+   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-items: center; 
   border-radius: 0px;
   box-shadow: 3px 2px 3px silver;
   transition: all 0.3s ease-in-out;
   padding: 3px;
-  background-color: rgb(0, 174, 255);
+  background-color:whitesmoke;
   
    
 }
@@ -181,13 +184,13 @@ nav a:hover, .dropdown:hover .dropbtn {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px white;
   z-index: 1;
 }
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -305,7 +308,10 @@ span.psw {
 }
 
 
-
+a{
+  display: grid;
+  grid-template-rows: 1fr, 1fr ,1fr;
+}
 
 
 * {box-sizing: border-box}

@@ -1,6 +1,10 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import {FaWhatsappSquare} from 'react-icons/fa'
+import {FiPhoneCall} from 'react-icons/fi'
+import {SiGmail} from 'react-icons/si'
+import {GrFacebook} from 'react-icons/gr'
 
 
 function Contact() {
@@ -8,10 +12,26 @@ function Contact() {
       <section>
       <NavBar />
       <div>
+
         <div className="banner-2">
-          <a href="Tel">Main Line. +233 (0) 241-650-140</a>
-          <a href="Tel">Mobile. +233 (0) 246-189-123</a>
-          <a href="Tel">WhatsApp No. +233 (0) 241-650-140</a>
+          <div>
+         
+          <a href="https://wa.me/0551682482" target="_blank" rel="noreferrer">WhatsApp Us  <FaWhatsappSquare/></a>
+          </div>
+          <div>
+          <FiPhoneCall/> 
+          <a href="tel:02002020202">Mobile. +233 (0) 246-189-123</a>
+          
+          </div>
+          <div>
+            <SiGmail/>
+          <a href="mailto:naeemsamsideen618@gmail.com">send us a mail</a>
+          </div>
+<div>
+  <GrFacebook/>
+  <a href="">follow us on facebook</a>
+</div>
+
         </div>
 
         <div className="banner">
