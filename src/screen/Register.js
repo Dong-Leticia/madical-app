@@ -1,50 +1,71 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import NavBar from '../components/NavBar'
+import { useState } from "react";
+import { Link} from "react-router-dom";
+// import { AuthContext } from "../context/auth.context";
 
 function Register() {
+  // const navigate = useNavigate();
+
+  // const { success, loading, user, authRegister } = useContext(AuthContext);
+
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  // useEffect(() => {
+  //   if (success) {
+  //     navigate("/home");
+  //   }
+  // }, [success]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // authRegister(username, email, password);
+  };
+
   return (
-    <div>
-      <NavBar/>
-      <form>
-        <div className="container-1">
-          <div className="banner">
-          <h1>SIGN UP</h1>
+    <form onSubmit={handleSubmit} className="form">
+      <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 m-3 p-3 bg-info">
+        <div className="form-group m-2">
+          <label htmlFor="username">username</label>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Enter username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
         </div>
-
-    <p>Please fill in this form to create an account.</p>
-    <hr/>
-
-    <label for="email"><b>username</b></label>
-          <input type="text" placeholder="Enter username" name="username" required />
-          
-          
-    
-
-    <label for="email"><b>email</b></label>
-          <input type="text" placeholder="Enter valid email" name="email" required />
-        
-          
-
-    <label for="password"><b>password</b></label>
-    <input type="password" placeholder="Password" name="password" required />
-
-    <label>
-      <input type="checkbox" checked="checked" name="remember" /> Remember me
-    </label>
-
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
-    <div className="clearfix-1">
-      <button type="button-1" className="cancelbtn-1">Cancel</button>
-      <button type="submit" className="signupbtn-1"><Link to="/register">Sign Up</Link></button>
-    </div>
-      </div>
-      <div className="container">
-    <span className="paaa">I Already have an account<Link to="/">Login</Link></span>
+        <div className="form-group m-2">
+          <label htmlFor="email">email</label>
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Enter email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
         </div>
-      </form>
+        <div className="form-group m-2">
+          <label htmlFor="password">password</label>
+          <input
+            type="password"
+            className="form-control"
+            placeholder="Enter password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <button type="submit" className="btn">
+      <Link to="/home">register</Link>
+        </button>
+        <div className="row">
+          I already have an account
+          <Link to="/" className="nav-link">
+            Login
+          </Link>
+        </div>
       </div>
+    </form>
   );
 }
 

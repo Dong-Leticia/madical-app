@@ -19,6 +19,7 @@ import Booknurse from './components/Booknurse';
 import Bookdentist from './components/Bookdentist';
 import Booknutritionist from './components/Booknutritionist';
 import Book from './components/Book';
+import Bookform from './components/Bookform';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path="/bookdentist" element={<Bookdentist />} />
           <Route path="/booknutritionist" element={<Booknutritionist />} />
           <Route path="/bookappointment" element={<Book />} />
+          <Route path="/bookform" element={<Bookform />} />
         
         </Routes>
       </div>

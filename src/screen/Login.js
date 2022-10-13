@@ -1,45 +1,60 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import NavBar from '../components/NavBar'
+import React, { useState} from "react";
+import { Link } from "react-router-dom";
+// import { AuthContext } from "../context/auth.context";
 
 function Login() {
+  // const navigate = useNavigate();
+
+  // const { success, loading, user, authLogin } = useContext(AuthContext);
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  // useEffect(() => {
+  //   if (success) {
+  //     navigate("/home");
+  //   }
+  // }, [success]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // authLogin(email, password);
+  };
+
   return (
-    <div>
-    
-      <div className="banner">
-          <h1>LOGIN</h1>
+    <form onSubmit={handleSubmit} className = "form">
+      <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 m-3 p-3 bg-info">
+        <div className="form-group m-2">
+          <label htmlFor="email">email</label>
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Enter email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
         </div>
-    
-
-<form>
-  <div className="imgcon">
-            <img src="pics/pa.jfif" alt="images" />
-          </div>
-
-  <div className="container">
-          <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" required />
-
-   
-          <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required></input>
-        
-    <button className="button-4" type="submit"><Link to="/home">Login</Link></button>
-    <label>
-      <input type="checkbox" checked="checked" /> Remember me
-    </label>
-  </div>
-
-  <div className="container">
-    <button type="button" className='cancelbtn'>Cancel</button>
-    <span className="psw">Forgot <a href="register">password?</a></span>
+        <div className="form-group m-2">
+          <label htmlFor="password">password</label>
+          <input
+            type="password"
+            className="form-control"
+            placeholder="Enter password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
         </div>
-        <div className="container">
-    <span className="paaa">I don't have an account<Link to="/register">Register</Link></span>
+        <button type="submit" className="btn btn-primary m-2">
+        <Link to="/home">Login</Link>
+        </button>
+        <div>
+          I don't have an account
+          <Link to="/register" className="nav-link">
+            Register
+          </Link>
         </div>
-        
-</form>
-</div>
+      </div>
+    </form>
   );
 }
 

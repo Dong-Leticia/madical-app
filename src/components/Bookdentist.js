@@ -3,11 +3,14 @@ import adina from '../nurses/adina.jpg'
 import hanah from '../nurses/hanah.jpg'
 import milly from '../nurses/milly.jpg'
 import sadika from '../nurses/sadika.jpg'
+import { Link } from 'react-router-dom'
 
 function bookDentist() {
 
   return (
- 
+    <>
+
+    <h2>our dentist team</h2>
 <div className='container'>
 
         <div className="card">
@@ -26,8 +29,8 @@ function bookDentist() {
               send mail
                  
               </a>
-              <a href="Location:Danko"> Location: Danko</a>
-              
+              <a href="Location:Danko"> Location: Accra</a>
+              <a href="/bookform">book</a>
             </h4>
             
           </div>
@@ -51,8 +54,8 @@ function bookDentist() {
                 sand mail
                  
               </a>
-              <a href="Location:Danko"> Location: Danko</a>
-              
+              <a href="Location:Danko"> Location: Tema</a>
+              <a href="/bookform">book</a>
             </h4>
             
           </div>
@@ -76,8 +79,8 @@ function bookDentist() {
                 send mail
                  
               </a>
-              <a href="Location:Danko"> Location: Danko</a>
-              
+              <a href="Location:Danko"> Location: Techiman</a>
+              <a href="/bookform">book</a>
             </h4>
             
           </div>
@@ -100,8 +103,8 @@ function bookDentist() {
                 send mail
                  
               </a>
-              <a href="Location:Danko"> Location: Danko</a>
-              
+              <a href="Location:Danko"> Location: Tumu</a>
+              <a href="/bookform">book</a>
             </h4>
             
           </div>
@@ -109,7 +112,8 @@ function bookDentist() {
 
         </div>
       
-  
+        <button> <Link to="/bookform"> book</Link> </button>
+        </>
   )
 }
 

@@ -1,15 +1,18 @@
 import { Link } from 'react-router-dom'
-import React from "react";
-import { VscAccount } from "react-icons/vsc";
+import React  from 'react'
+import {FaSignOutAlt} from 'react-icons/fa'
 
 
 
 function NavBar() {
+
+  
+ 
   return (
     <nav>
       <div className='sec'>
         <div className='nav-11'>
-        <Link className='nav-0' to="/Login"><VscAccount /></Link>
+        <Link className='nav-0' to="/Login"></Link>
       </div>
         <div className='nav-11'>
           <Link to="/login">Login</Link>
@@ -20,9 +23,9 @@ function NavBar() {
       <ul>
       <li><Link to="/home">Home</Link></li>
       <div class="dropdown">
-    <button className="dropbtn">About Us 
-      <i class="fa fa-caret-down"></i>
-    </button>
+    <li><Link to="/about">About Us </Link>  
+     
+    </li>
     <div class="dropdown-content">
             <Link to="/about">Our Partners</Link>
             <Link to="/medicalteam">Our Medical Team</Link>
@@ -31,9 +34,9 @@ function NavBar() {
   </div>   
        
         <div class="dropdown">
-    <button className="dropbtn">Online Services 
-      <i class="fa fa-caret-down"></i>
-    </button>
+    <li><Link> Online Services</Link>  
+     
+    </li>
           <div class="dropdown-content">
             <Link to="/medicalconsult">Online Medical Consultation</Link>
             <Link to="/DrugDelivery">Drug Delivery Services</Link>
@@ -51,7 +54,7 @@ function NavBar() {
            <li> <Link to="/contact">Contact</Link></li>
             </ul>
   
- 
+ <div> <Link to="/"><FaSignOutAlt/></Link>    </div>
       </ul>
       
     </nav>

@@ -1,13 +1,15 @@
-import React from 'react'
-import tish from '../nurses/tish.jpg'
-import peter from '../nurses/peter.jpg'
-import leti from '../nurses/leti.jpg'
-import frank from '../nurses/frank.jpg'
+import React from 'react';
+import tish from '../nurses/tish.jpg';
+import peter from '../nurses/peter.jpg';
+import leti from '../nurses/leti.jpg';
+import frank from '../nurses/frank.jpg';
+import {Link} from "react-router-dom"
 
 function bookNurse() {
 
   return (
-  
+    <>
+    <h2>OUR TEAM OF MEDICAL TEAM OF NURSE</h2>
 <div className="container">
         <div className="card">
           <p>Eva</p>
@@ -25,8 +27,8 @@ function bookNurse() {
                 send mail
                  
               </a>
-              <a href="Location:Danko"> Location: Danko</a>
-              
+              <a href="Location:Danko"> Location: Yeji</a>
+              <a href="/bookform">book</a>
             </h4>
            
           </div>
@@ -49,8 +51,8 @@ function bookNurse() {
                 send mail
                  
               </a>
-              <a href="Location:Danko"> Location: Danko</a>
-             
+              <a href="Location:Danko"> Location: Salaga</a>
+              <a href="/bookform">book</a>
             </h4>
             
           </div>
@@ -73,8 +75,8 @@ function bookNurse() {
                 send mail
                  
               </a>
-              <a href="Location:Danko"> Location: Danko</a>
-              
+              <a href="Location:Danko"> Location: Takoradi</a>
+              <a href="/bookform">book</a>
             </h4>
            
           </div>
@@ -97,16 +99,16 @@ function bookNurse() {
                 send mail
                  
               </a>
-              <a href="Location:Danko"> Location: Danko</a>
-              
+              <a href="Location:"> Location: Bolega</a>
+              <a href="/bookform">book</a>
             </h4>
             
           </div>
         </div>
 
         </div>
-        
- 
+        <button> <Link to="/bookform">  book </Link>   </button>
+ </>
   )
 }
 

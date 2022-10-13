@@ -4,15 +4,16 @@ import diva from '../nurses/diva.jpg'
 import joe from '../nurses/joe.jpg'
 import mama from '../nurses/mama.jpg'
 import orisin from '../nurses/orisin.jpg'
+import { Link } from 'react-router-dom'
 
 function bookDoctor() {
 
   return (
- 
-    
+ <>
+    <h2>OUR TEAM OF MEDICAL DOCTORS</h2>
 
 <div className="container">
-\
+
         <div className="card">
             <p>Dr.Alfred</p>
           <img src={diva} alt="no" />
@@ -29,7 +30,8 @@ function bookDoctor() {
               send mail
                  
               </a>
-              <a href="Location:Danko"> Location: Danko</a>
+              <a href="Location:Danko"> Location: Airstrip</a>
+              <a href="/bookform">book</a>
               
             </h4>
            
@@ -53,8 +55,8 @@ function bookDoctor() {
                  send mail
                  
               </a>
-              <a href="Location:Danko"> Location: Danko</a>
-              
+              <a href="Location:Danko"> Location: sombo</a>
+              <a href="/bookform">book</a>
             </h4>
             
           </div>
@@ -77,8 +79,8 @@ function bookDoctor() {
                 send mail
                  
               </a>
-              <a href="Location:Danko"> Location: Danko</a>
-              
+              <a href="Location:Danko"> Location: Mangu</a>
+              <a href="/bookform">book</a>
             </h4>
             
           </div>
@@ -101,8 +103,8 @@ function bookDoctor() {
                 send mail
                  
               </a>
-              <a href="Location:Danko"> Location: Danko</a>
-              
+              <a href="Location:Danko"> Location: Tamale</a>
+              <a href="/bookform">book</a>
             </h4>
             
           </div>
@@ -126,7 +128,7 @@ function bookDoctor() {
                  
               </a>
               <a href="Location:Danko"> Location: Danko</a>
-              
+              <a href="/bookform">book</a>
             </h4>
             
           </div>
@@ -134,8 +136,9 @@ function bookDoctor() {
 
     </div>
   
+  <button> <Link to="/bookform">  book </Link>   </button>
     
-            
+    </>       
   )
 }
 

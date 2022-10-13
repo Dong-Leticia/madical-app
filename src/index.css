@@ -16,12 +16,20 @@ nav{
 }
 .nav-11{
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 ul{
   display: flex;
   list-style: none;
 }
+.book{
+ display: block;
+  align-items: center;
+  width: 50%;
+ 
+}
+
+
 
 
 li{
@@ -73,7 +81,8 @@ footer{
   display: flex;
   flex-direction: column;
   margin-top: 100px;
-  margin-right: -150px;
+  margin: 0 30px;
+
 }
 .banner-2{
   color: white;
@@ -153,8 +162,8 @@ nav a {
   text-decoration: none;
 }*/
 .image{
-  height: 60vh;
-  width: 100%;
+  height: 50vh;
+  width: 80%;
 }
 
 
@@ -176,13 +185,13 @@ nav a {
 }
 
 nav a:hover, .dropdown:hover .dropbtn {
-  background-color: blue;
+  background-color: pink;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: blue;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px white;
   z-index: 1;
@@ -236,9 +245,41 @@ width: 350px;
   margin-right: -200px;
 }
 
-form {
-  border: 3px solid #f1f1f1;
+.form {
+  background-color: #36d8f433;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+padding-top: 100px;
+ border-radius: 5px;
+width: 100%;
 }
+.form-group{
+  width: 100%;
+  padding: 20px 20px;
+  background-color: #04AA6D;
+ 
+}
+.form-control{
+  display: flex;
+  width: 100%;
+  height: 5vh;
+  border-radius: 15px;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+.btn{
+  width: 50%;
+  height: 5vh;
+  background-color: teal;
+  color: #000;
+  border-radius: 15px;
+}
+
+
+
 
 Full-width inputs 
 input[type=text], input[type=password] {
